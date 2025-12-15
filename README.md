@@ -7,8 +7,8 @@ EjOS; Lenovo IdeaPad Z580 üzerinde çalışan Ollama tabanlı yerel LLM altyap�
 Status: Active / In Use
 
 [ Mic ] -> [ STT ] -> [ LLM (Ollama) ] -> [ TTS ] -> [ Speaker ]
-                    |                |
-                 Web UI           Pi Client
+| |
+Web UI Pi Client
 
 
 ## Donanım (Test Ortamı)
