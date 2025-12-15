@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJOS</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/stackoverflow-light.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <div class="sidebar">
+        <button class="new-chat-btn" onclick="startNewChat()">
+            <i class="fa-solid fa-plus"></i> Yeni Sohbet
+        </button>
+
+        <div class="history-label">GEÇMİŞ</div>
+        <div class="chat-list" id="history-list"></div>
+
+        <div class="system-stats">
+            <div class="sidebar-header">
+                <h3><i class="fa-solid fa-server"></i> Sistem</h3>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-title">RAM</div>
+                <div class="progress-bg">
+                    <div class="progress-fill" id="ram-bar" style="width: 0%;"></div>
+                </div>
+                <div class="stat-sub" id="ram-text">Yükleniyor...</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-title">CPU Yükü</div>
+                <div class="progress-bg">
+                    <div class="progress-fill warning" id="cpu-bar" style="width: 0%;"></div>
+                </div>
+                <div class="stat-sub" id="cpu-text">%0 Kullanım</div>
+            </div>
+
+            <div style="display: flex; gap: 10px;">
+                <div class="stat-card" style="flex: 1;">
+                    <div class="stat-title"><i class="fa-solid fa-microchip"></i> CPU Isı</div>
+                    <div class="stat-value" id="temp-cpu" style="color: #ef4444;">--°C</div>
+                </div>
+                <div class="stat-card" style="flex: 1;">
+                     <div class="stat-title"><i class="fa-solid fa-temperature-half"></i> PC Isı</div>
+                    <div class="stat-value" id="temp-sys" style="color: #f59e0b;">--°C</div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-title">Durum</div>
+                <div class="status-badge online"><span class="dot"></span> Hazır</div>
+            </div>
+            
+            <button class="clear-btn" onclick="deleteCurrentChat()">
+                <i class="fa-solid fa-trash"></i> Sohbeti Sil
+            </button>
+        </div>
+    </div>
+
+    <div class="main-area">
+        <div class="chat-history" id="chat-container"></div>
+
+        <div class="input-container">
+            <div class="input-box">
+                <input type="text" id="user-input" placeholder="Bir kod iste..." autocomplete="off">
+                <button onclick="sendMessage()" id="send-btn"><i class="fa-solid fa-arrow-up"></i></button>
+            </div>
+            <div class="footer-text">EJOS Beta V1 Sürümüdür Llama-3 İle Eğitilmiştir.</div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
