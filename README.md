@@ -111,6 +111,7 @@ This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**
 
 ### Trademark Notice
 **"EjOS"** and the **EjOS logo** are trademarks of **Bünyamin Öksüz**.
+- For trademark usage details, see TRADEMARK.md.
 
 - Third parties are **not permitted** to use the **"EjOS"** name or the **EjOS logo** to publish, market, brand, or redistribute any software, fork, derivative, service, or product.
 - You may **not** release modified versions or forks under the name **"EjOS"** or any confusingly similar name (e.g., "EjOS AI", "EjOS OS").
