@@ -105,9 +105,13 @@ python3 clientpi.py
 ## ⚖️ License & Trademark Notice
 
 ### Software License
-This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
-- You may use, copy, modify, and distribute this software under the terms of GPL-3.0.
-- If you distribute modified versions or derivative works, you must provide the corresponding source code under GPL-3.0.
+This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
+- You may use, copy, modify, and distribute this software under the terms of AGPL-3.0.
+- **Network Use is Distribution:** If you modify this software and run it on a server to provide network services (SaaS, local network AI hosting, etc.) to other users, you **MUST** make the complete source code of your modified version available to those users under the AGPL-3.0 terms.
+- All original copyright, author attributions, and license notices must be preserved in all copies or substantial portions of the software.
+
+##⚠️ **Anti-Piracy & License Enforcement Note:** 
+Any attempt to copy, redistribute, or use this repository without proper attribution, or any violation of the AGPL-3.0 terms (including removing author credits or code-squatting), will be met with immediate legal actions, automated tracking, and formal GitHub/Hosting DMCA Takedown Notices. *We actively monitor for infringing clones.*
 
 ### Trademark Notice
 - "EjOS" and the EjOS logo are used as identifiers of this project and are claimed as trademarks by Bünyamin Öksüz.
@@ -115,7 +119,8 @@ This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**
 - This restriction does not prevent factual references such as "based on EjOS" or "forked from EjOS", provided no confusion or endorsement is implied.
 - You may **not** release modified versions or forks under the name **"EjOS"** or any confusingly similar name (e.g., "EjOS AI", "EjOS OS").
 - If you redistribute a **modified version or a fork**, you must **remove EjOS branding** (name/logo) and use your **own** name and branding.
-- This trademark restriction does not limit the rights granted by GPL-3.0 to the source code; it only restricts use of the **name and logo**.
+- This trademark restriction does not limit the rights granted by AGPL-3.0 to the source code; it only restricts use of the **name and logo**.
+
 ### Name Disclaimer
 "EjOS" is the name of an open-source software project.
 The use of this name is for identification purposes only and does not imply any affiliation with, endorsement by, or association with any other company, product, organization, or trademark using similar names.
